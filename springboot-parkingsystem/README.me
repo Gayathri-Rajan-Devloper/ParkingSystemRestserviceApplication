@@ -1,0 +1,25 @@
+This is a simple parking application with provided 6 API
+1.Park a vehicle : /park -> In this we have provide the payload for the user creation in
+postman
+Method - PostMapping : /park
+
+2.Unpark a vehicle : /unpark/{slot} : In this we have  to provide the slot of the vehicle 
+which you need to unpark.
+Method : DeleteMapping : /unpark/{slot}
+
+3. Check if any space available for parking : /park : In this it will fetch all the parking slot which is empty 
+Method : GetMapping :/park
+
+4.Check if any specific slot is empty :/parkspace/{slot} : In this we to pass the specific slot of the vehicle 
+which we need to know weather it is empty or not 
+  GetMapping : /parkspace/{slot}
+  
+ 5.Details of the vehicles of the specific slot : /park/{slot} : In this we need to pass the slot of the vehicle 
+ whose details we want to know .
+ GetMapping: /park/{slot}
+ 
+ 6.Calculate the amount to be paid for parking based on time it was there :/park/price/{slot}
+ In this we need to pass the slot of the vehicle whose price we need to calculate .
+ GetMapping : /park/price/{slot}
+ 
+  
